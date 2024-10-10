@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+}
+
+.sidebar {
+    width: 300px; /* Ajuste a largura conforme necessário */
+    text-align: center;
+}
+
+.login-image {
+    width: 100%; /* A imagem ocupará toda a largura da sidebar */
+    height: auto; /* Manter as proporções da imagem */
+    margin-bottom: 20px;
+}

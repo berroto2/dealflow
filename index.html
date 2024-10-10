@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DealFlow</title>
+    <!--favicon básico-->
+    <link rel="shortcut icon" href="imagens/dealflow-favicon.jpeg" type="image/jpeg" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Menu horizontal */
+        nav {
+            background-color: #063970;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .login-box {
+            margin-right: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: green;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="submit"], .register-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, .register-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .image-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-box img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+
+        .description-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: left;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Projeto</a></li>
+            <li><a href="#">Como utilizar</a></li>
+            <li><a href="cadastro.html">Entrar</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <h1>DEALFLOW</h1>
+        <div class="container">
+            <div class="login-box">
+                <form action="/login" method="post">
+                    <label for="login">Login:</label>
+                    <input type="text" id="login" name="login" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+
+                    <div class="button-container">
+                        <input type="submit" value="Entrar">
+                        <button type="button" class="register-btn" onclick="window.location.href='cadastro.html'">Cadastro</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="image-box">
+                <img src="imagens/casa1.jpeg" alt="Casa moderna com jardim florido na frente">
+            </div>
+        </div>
+
+        <div class="description-box">
+            <link 
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+            rel="stylesheet">
+
+            <p>Conheça o DealFlow, o CRM criado especialmente para corretores imobiliários que buscam transformar suas vendas. 
+                Com uma interface intuitiva, o DealFlow centraliza o gerenciamento de leads, simplifica a organização de imóveis e 
+                otimiza o acompanhamento com clientes. Nunca perca uma oportunidade de venda, acompanhe o progresso de cada negociação 
+                em tempo real e tenha todos os dados importantes ao seu alcance, seja no celular ou no computador. O DealFlow foi desenhado 
+                para aumentar sua produtividade, permitindo que você se concentre no que realmente importa: fechar negócios e construir 
+                relacionamentos duradouros.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Um programa desenvolvido por Eduardo Mello</p>
+    </footer>
+</body>
+</html>

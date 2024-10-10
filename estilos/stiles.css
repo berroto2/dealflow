@@ -1,0 +1,23 @@
+html{
+    font-size: 10px;
+    font-family: "Montserrat", system-ui;
+    background-color: #F8F0B9
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+p, li{
+    margin: 0;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.ilustracao{
+    display: block;
+    height: auto;
+    width: 400px;
+    margin: 0 auto;
+}
